@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+  <h1>Thank you for subscribing</h1>
+  <br><br>
+  <p>Please confirm your information</p>
+  <br>
+  <p>{{ first_name }}</p>
+  <p>{{ last_name }}</p>
+  <p>{{ email }}</p>
+{% endblock %}

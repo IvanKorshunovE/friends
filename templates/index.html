@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Ivan's blog
+{% endblock %}
+{% block content %}
+  <div class="container">
+        <h1>Hi, world!</h1>
+  </div>
+  <h2>Pizzas</h2>
+    <ul>
+      {% for pizzas in pizza %}
+        <li>{{ pizzas }}</li>
+      {% endfor %}
+    </ul>
+{% endblock %}
